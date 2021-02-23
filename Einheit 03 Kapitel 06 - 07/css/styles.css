@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    background-color: rgb(80, 80, 80);
+}
+
+header {
+    background-color: rgb(50, 50, 50);
+    border-bottom: rgb(20, 20, 20) solid 5px;
+    margin-bottom: 50px;
+}
+
+header nav a {
+    font-size: 60px;
+    margin-left: 2%;
+    color: rgb(80, 80, 80);
+}
+
+header nav a #youtube:hover {
+    color: #FF0000;
+    transition: 1s;
+}
+
+header nav a #vimeo:hover {
+    color: #1ab7ea;
+    transition: 1s;
+}
