@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="/Einheit 04 Kapitel 08/css/styles.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <nav>
+                <a href="/Einheit 04 Kapitel 08/index.html"><i class="fas fa-home" id="home"></i></a>
+                <a href="/Einheit 04 Kapitel 08/info.html"><i class="fas fa-info" id="info"></i></a>
+                <a href="/Einheit 04 Kapitel 08/contact.html"><i class="fas fa-envelope" id="contact"></i></a>
+
+            </nav>
+        </nav>
+    </header>
+    <div class="comment">
+        <a href="/Einheit 04 Kapitel 08/index.html"><img src="/Einheit 04 Kapitel 08/media/40592fd0-b88b-4e19-bd37-ab916dcb1ee0_200x200.png" width="100" height="100" class="logo"></a>
+        <h1>Wie hat es bei uns gefallen?</h1>
+    </div>
+    <article class="contact">
+        <section class="contact-form">
+            <form method="GET" action="/Einheit 04 Kapitel 08/contact.html">
+                <fieldset>
+                    <legend>Kontaktieren Sie mit uns!</legend>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="Name" placeholder="Ihre Name..."><br>
+                    <label for="e-mail">E-Mail</label>
+                    <input type="email" id="e-mail" name="e-mail" placeholder="Ihre E-Mail adresse..."><br>
+                    <label for="visit_day">Besuchstag</label>
+                    <input type="date" id="visit_day" name="visit_day"><br>
+                    <label for="visit_time">Besuchszeit</label>
+                    <input type="time" id="visit_time" name="visit_time"><br>
+                    <label for="rating">Bewertung</label>
+                    <input type="range" id="rating" name="rating" min="1" max="100" value="50"><br>
+                    <label for="recomend">Weiterempfehlung</label>
+                    <label for="yes_recomendation" id="recomend_y">Ja</label>
+                    <input type="radio" id="yes_recomendation" name="recomendation" value="yes">
+                    <label for="no_recomendation">Nein</label>
+                    <input type="radio" id="no_recomendation" name="recomendation" value="no"><br>
+                    <label for="animalS">Welche Tierart hat am besten gefallen?</label>
+                    <input list="animals" id="animal" name="animal">
+                    <datalist id="animals">
+                        <option value="Säugetiere">
+                        <option value="Insekten">
+                        <option value="Fische">
+                        <option value="Vögel">
+                    </datalist><br>
+                    <label for="comment">Kommentar</label>
+                    <textarea id="comment" name="comment" rows="5" cols="35" placeholder="Ihre kommentar..."></textarea><br>
+                    <label for="visit_info" id="visit_info">Besucherinfo</label>
+                    <select id="visit_info" name="visit_info">
+                        <option value="family_vacation">Familienasuflug</option>
+                        <option value="alone">Allein unterwegs</option>
+                        <option value="group_vacation">Gruppenausflug</option>
+                        <option value="vaction_friends">Ausflug mit Freunden</option>
+                        <option value="else">was anderes</option>
+                    </select><br>
+                    <button type="submit" value="submit">Send</button>
+                    <button type="reset" value="reset">Wiederstellen</button>
+                </fieldset>
+            </form>
+        </section>
+    </article>
+    <footer>
+        <p><i class="fas fa-copyright"></i> FantasyZoo</p>
+        <address>
+            Windflachweg 1, 4040 Linz
+        </address>
+
+    </footer>
+</body>
+
+</html>

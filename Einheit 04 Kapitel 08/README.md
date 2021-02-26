@@ -22,7 +22,7 @@ Tabelle mit folgenden Spalten:
 
 ### 3. Seite: Kontaktseite
 
-Auf dieser Seite soll es ein Formular geben.<br>
+Auf dieser Seite soll es ein Formular geben.
 Felder die Abgefragt werden (achte auf die Validierung):
 1. Name
 2. Mailadresse
