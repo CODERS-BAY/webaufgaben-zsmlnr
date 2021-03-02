@@ -1,457 +1,430 @@
-    @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans+Condensed:wght@300&display=swap');
-    * {
-        scrollbar-width: thin;
-        scrollbar-color: darkseagreen black;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&family=Open+Sans:wght@300&display=swap');
+* {
+    scrollbar-width: thin;
+    scrollbar-color: darkseagreen black;
+    margin: 0;
+}
+
+body {
+    background-image: url(/Einheit\ 04\ Kapitel\ 08/media/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    box-sizing: border-box;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    background-color: rgb(20, 20, 20);
+}
+
+header nav {
+    text-align: left;
+}
+
+header nav a {
+    margin-left: 2px;
+    color: rgb(60, 60, 60);
+    text-decoration: none;
+    transition: 1s;
+}
+
+header nav a i {
+    color: rgb(60, 60, 60);
+    font-size: 30px;
+    margin: 20px;
+    transition: 1s;
+}
+
+header nav a i:hover {
+    color: seagreen;
+    transition: 1s;
+}
+
+.welcome {
+    background-color: rgba(88, 88, 88, 0.9);
+    border-bottom: rgb(20, 20, 20) solid 10px;
+    margin: 0;
+    transition: 1s;
+}
+
+.welcome:hover {
+    background-color: rgba(190, 190, 190, 0.9);
+    transition: 1s;
+}
+
+.welcome:hover #zoo {
+    font-size: xx-large;
+    transition: 1s;
+}
+
+.welcome:hover img {
+    width: 200px;
+    height: 200px;
+}
+
+#zoo {
+    margin: 1em;
+    text-align: center;
+    font-family: "Fjalla One";
+    transition: 1s;
+}
+
+.logo {
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    opacity: 0.7;
+    transition: 1s;
+}
+
+.welcome_video_opening {
+    float: left;
+    width: 50%;
+}
+
+.welcome_content {
+    padding-bottom: 50px;
+}
+
+.welcome_content:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width:600px) {
+    .welcome_video_opening {
+        width: 100%;
+    }
+    .video {
         margin: 0;
+        padding: 0;
     }
-    
-    body {
-        background-image: url(/Einheit\ 04\ Kapitel\ 08/media/background.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        margin: 0;
-        box-sizing: border-box;
-        color: black;
-        font-family: "Open Sans Condensed";
-    }
-    
-    header {
-        background-color: rgb(20, 20, 20);
-    }
-    
-    header nav {
-        text-align: left;
-    }
-    
-    header nav a {
-        margin-left: 2px;
-        color: rgb(60, 60, 60);
-        text-decoration: none;
-        font-family: "Fjalla One";
-        transition: 1s;
-    }
-    
-    header nav a i {
-        color: rgb(60, 60, 60);
-        font-size: 30px;
-        margin: 20px;
-        transition: 1s;
-    }
-    
-    #home:hover {
-        color: seagreen;
-        transition: 1s;
-        text-shadow: 0 0 120px seagreen;
-    }
-    
-    #info:hover {
-        color: lightyellow;
-        text-shadow: 0 0 120px lightyellow;
-    }
-    
-    #contact:hover {
-        color: lightskyblue;
-        text-shadow: 0 0 120px lightskyblue;
-    }
-    
-    #nav_name:hover {
-        color: darkseagreen;
-        transition: 1s;
-        text-shadow: 0 0 120px darkseagreen;
-    }
-    
-    .welcome {
-        background-color: rgba(88, 88, 88, 0.9);
-        border-bottom: rgb(20, 20, 20) solid 10px;
-        margin: 0;
-        transition: 1s;
-    }
-    
-    .welcome:hover {
-        background-color: rgba(190, 190, 190, 0.9);
-        transition: 1s;
-    }
-    
-    .welcome:hover #zoo {
-        font-size: xx-large;
-        transition: 1s;
-    }
-    
-    #zoo {
-        margin: 1em;
-        text-align: center;
-        font-family: "Fjalla One";
-        transition: 1s;
-    }
-    
-    .logo {
+    iframe {
+        width: 420px;
+        height: 420px;
         padding: 0;
         margin: 0;
-        margin-left: auto;
-        opacity: 0.7;
-        transition: 1s;
     }
-    
-    .welcome:hover img {
-        width: 200px;
-        height: 200px;
-    }
-    
-    .welcome_video_opening {
-        float: left;
-        width: 50%;
-    }
-    
-    .welcome_content {
-        padding-bottom: 50px;
-    }
-    
-    .welcome_content:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-    
-    @media screen and (max-width:600px) {
-        .welcome_video_opening {
-            width: 100%;
-        }
-        .video {
-            margin: 0;
-            padding: 0;
-        }
-        iframe {
-            width: 420px;
-            height: 420px;
-            padding: 0;
-            margin: 0;
-        }
-    }
-    
-    #welcome_name {
-        text-align: center;
-        padding-top: 100px;
-        font-size: 20px;
-    }
-    
-    #welcome_opening ul {
-        padding-top: 20px;
-        text-align: center;
-        list-style: none;
-        font-size: 20px;
-        font-weight: 300;
-    }
-    
-    .video {
-        background-color: rgba(20, 20, 20, 0.9);
-        text-align: center;
-        margin: 0;
-        border-bottom: rgb(20, 20, 20) solid 10px;
-    }
-    
-    .video p {
-        margin: 0;
-        transition: 1s;
-    }
-    
-    .video p:hover {
-        background-color: rgba(20, 20, 20, 0.9);
-        transition: 1s;
-    }
-    
-    .definition {
-        margin: 0;
-        background-color: rgba(88, 88, 88, 0.9);
-        border-bottom: rgb(20, 20, 20) solid 10px;
-        text-align: center;
-        font-size: 25px;
-        transition: 1s;
-    }
-    
-    .definition:hover {
-        background-color: rgba(190, 190, 190, 0.9);
-    }
-    
+}
+
+#welcome_name {
+    text-align: center;
+    padding-top: 100px;
+    font-size: 20px;
+}
+
+#welcome_opening ul {
+    padding-top: 20px;
+    text-align: center;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.video {
+    background-color: rgba(20, 20, 20, 0.9);
+    text-align: center;
+    margin: 0;
+    border-bottom: rgb(20, 20, 20) solid 10px;
+}
+
+.video p {
+    margin: 0;
+    transition: 1s;
+}
+
+.video p:hover {
+    background-color: rgba(20, 20, 20, 0.9);
+    transition: 1s;
+}
+
+.definition {
+    margin: 0;
+    background-color: rgba(88, 88, 88, 0.9);
+    border-bottom: rgb(20, 20, 20) solid 10px;
+    text-align: center;
+    font-size: 25px;
+    transition: 1s;
+}
+
+.definition:hover {
+    background-color: rgba(190, 190, 190, 0.9);
+}
+
+.definitin_animals_listed {
+    float: left;
+    width: 25%;
+}
+
+.definitin_animals_listed {
+    padding-bottom: 50px;
+}
+
+.definition_animals:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width:600px) {
     .definitin_animals_listed {
-        float: left;
-        width: 25%;
+        width: 100%;
     }
-    
-    .definitin_animals_listed {
-        padding-bottom: 50px;
-    }
-    
-    .definition_animals:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-    
-    @media screen and (max-width:600px) {
-        .definitin_animals_listed {
-            width: 100%;
-        }
-    }
-    
-    .definition h1 {
-        margin: 0;
-        transition: 1s;
-    }
-    
-    .definition:hover h1 {
-        font-size: 40px;
-        transition: 1s;
-        color: seagreen;
-    }
-    
-    .definition ul {
-        list-style: none;
-    }
-    
-    .info-text {
-        background-color: rgba(20, 20, 20, 0.9);
-        color: rgba(46, 139, 87, 0.8);
-        font-size: 25px;
-        font-family: "Fjalla One";
-        padding: 10px;
-        text-align: center;
-    }
-    
+}
+
+.definition h1 {
+    margin: 0;
+    margin-bottom: 20px;
+    color: seagreen;
+    font-size: 40px;
+    font-family: 'Fjalla One';
+}
+
+.definition ul {
+    list-style: none;
+}
+
+.info-text {
+    background-color: rgba(20, 20, 20, 0.9);
+    color: rgba(46, 139, 87, 0.8);
+    font-size: 25px;
+    font-family: "Fjalla One";
+    padding: 10px;
+    text-align: center;
+}
+
+.animals {
+    background-color: rgba(88, 88, 88, 0.9);
+    margin-top: 0;
+    text-align: center;
+    padding: 10%;
+}
+
+.info-text h1 {
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width:600px) {
     .animals {
-        background-color: rgba(88, 88, 88, 0.9);
-        margin-top: 0;
-    }
-    
-    .info-text h1 {
-        margin-bottom: 10px;
-    }
-    
-    .animals {
-        text-align: center;
-    }
-    
-    @media screen and (max-width:600px) {
-        .animals {
-            width: 100%;
-        }
-        #animal_table {
-            margin: 0;
-            width: 80%;
-        }
-    }
-    
-    table {
         width: 100%;
-        text-align: center;
-        margin: 0;
-        padding: 15px;
     }
-    
-    #animal_table tr {
-        transition: 1s;
-    }
-    
-    #animal_table th {
-        background-color: rgba(20, 20, 20, 0.9);
-        color: rgba(46, 139, 87, 0.8);
-        transition: 1s;
-        font-size: 20px;
-    }
-    
-    #animal_table tr:hover {
-        background-color: rgba(46, 139, 87, 0.8);
-        font-size: 25px;
-        transition: 1s;
-    }
-    
-    .comment {
-        text-align: center;
-        font-family: "Fjalla One";
-        padding: 50px;
-        background-color: rgba(88, 88, 88, 0.9);
-    }
-    
-    .contact {
-        background-color: rgba(88, 88, 88, 0.9);
-        padding: 20px;
-    }
-    
-    fieldset {
-        width: 60%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 50px;
-        border: solid rgba(20, 20, 20, 0.9);
-        border-radius: 5px;
-        padding: 20px;
-        transition: 2s;
-    }
-    
-    legend {
-        font-family: "Fjalla One";
-    }
-    
-    label {
-        color: rgb(20, 20, 20);
-        font-family: "Fjalla One";
-    }
-    
-    input[type=text],
-    [type=email],
-    [type=date],
-    [type=time] {
-        width: 100%;
-        margin-bottom: 15px;
-        margin-top: 15px;
-        padding: 5px;
-        resize: vertical;
-        background-color: rgba(20, 20, 20, 0.9);
-        border: solid 1px rgba(88, 88, 88, 0.9);
-        border-radius: 5px;
-        color: rgba(88, 88, 88, 0.9);
-        opacity: 0.7;
-        transition: 1s;
-    }
-    
-    fieldset:hover {
-        width: 80%;
-        transition: 2s;
-    }
-    
-    fieldset:hover input {
-        opacity: 1;
-    }
-    
-    fieldset:hover #rating {
-        opacity: 1;
-    }
-    
-    #rating {
-        margin-bottom: 15px;
-        margin-top: 15px;
-        padding: 5px;
-        height: 25px;
-        outline: none;
-        width: 100%;
-        -webkit-appearance: none;
-        background-color: rgba(20, 20, 20, 0.9);
-        opacity: 0.7;
-        transition: 1s;
-        border: rgba(88, 88, 88, 0.9) solid 1px;
-        border-radius: 5px;
-    }
-    
-    #rating::-moz-range-thumb {
-        width: 25px;
-        height: 25px;
-        border-radius: 50px;
-        background-color: rgba(20, 20, 20, 0.9);
-        transition: 1s;
-    }
-    
-    fieldset:hover #rating::-moz-range-thumb {
-        background-color: rgba(46, 139, 87, 0.8);
-        transition: 1s;
-    }
-    
-    input[type=radio] {
-        margin-bottom: 15px;
-        margin-top: 15px;
-        padding: 5px;
-    }
-    
-    input[list] {
-        width: 100%;
-        margin-bottom: 15px;
-        margin-top: 15px;
-        padding: 5px;
-        resize: vertical;
-        background-color: rgba(20, 20, 20, 0.9);
-        border: solid 1px rgba(88, 88, 88, 0.9);
-        border-radius: 5px;
-        color: rgba(88, 88, 88, 0.9);
-        opacity: 0.7;
-        transition: 1s;
-    }
-    
-    textarea {
-        width: 100%;
-        margin-bottom: 15px;
-        margin-top: 15px;
-        padding: 5px;
-        resize: vertical;
-        background-color: rgba(20, 20, 20, 0.9);
-        border: solid 1px rgba(88, 88, 88, 0.9);
-        border-radius: 5px;
-        color: rgba(88, 88, 88, 0.9);
-        opacity: 0.7;
-        transition: 1s;
-    }
-    
-    fieldset:hover textarea {
-        opacity: 1;
-    }
-    
-    select {
-        width: 100%;
-        margin-bottom: 15px;
-        margin-top: 15px;
-        padding: 5px;
-        resize: vertical;
-        background-color: rgba(20, 20, 20, 0.9);
-        border: solid 1px rgba(88, 88, 88, 0.9);
-        border-radius: 5px;
-        color: rgba(88, 88, 88, 0.9);
-        opacity: 0.7;
-        transition: 1s;
-    }
-    
-    fieldset:hover select {
-        opacity: 1;
-    }
-    
-    button {
-        width: 15%;
-        margin-bottom: 15px;
-        margin-top: 15px;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 5px;
-        resize: vertical;
-        background-color: rgba(20, 20, 20, 0.9);
-        border: solid 1px rgba(88, 88, 88, 0.9);
-        border-radius: 5px;
-        color: rgba(88, 88, 88, 0.9);
-        opacity: 0.7;
-        transition: 1s;
-        cursor: pointer;
-    }
-    
-    fieldset:hover button {
-        background-color: rgba(46, 139, 87, 0.8);
-        color: rgb(20, 20, 20);
-        opacity: 1;
-    }
-    
-    button:hover {
-        background-color: black;
-    }
-    
-    footer {
-        background-color: rgb(20, 20, 20);
-        margin: 0;
-        color: rgb(60, 60, 60);
-        transition: 1s;
-        padding: 1em;
-        text-align: center;
-        font-family: "Fjalla One";
-    }
-    
-    footer p {
+    #animal_table {
         margin: 0;
     }
-    
-    footer:hover {
-        color: seagreen;
-    }
+}
+
+table {
+    width: 100%;
+    text-align: center;
+}
+
+#animal_table tr {
+    transition: 1s;
+}
+
+#animal_table th {
+    background-color: rgba(20, 20, 20, 0.9);
+    color: rgba(46, 139, 87, 0.8);
+    transition: 1s;
+    font-size: 20px;
+}
+
+#animal_table tr:hover {
+    background-color: rgba(46, 139, 87, 0.8);
+    transition: 1s;
+}
+
+.comment {
+    text-align: center;
+    font-family: "Fjalla One";
+    padding: 50px;
+    background-color: rgba(88, 88, 88, 0.9);
+}
+
+.contact {
+    background-color: rgba(88, 88, 88, 0.9);
+    padding: 20px;
+}
+
+fieldset {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    border: solid rgba(20, 20, 20, 0.9);
+    border-radius: 5px;
+    padding: 20px;
+    transition: 2s;
+}
+
+legend {
+    font-family: "Fjalla One";
+}
+
+label {
+    color: rgb(20, 20, 20);
+    font-family: "Fjalla One";
+}
+
+input[type=text],
+[type=email],
+[type=date],
+[type=time] {
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding: 5px;
+    resize: vertical;
+    background-color: rgba(20, 20, 20, 0.9);
+    border: solid 1px rgba(88, 88, 88, 0.9);
+    border-radius: 5px;
+    color: rgba(88, 88, 88, 0.9);
+    opacity: 0.7;
+    transition: 1s;
+}
+
+fieldset:hover {
+    width: 80%;
+    transition: 2s;
+}
+
+fieldset:hover input {
+    opacity: 1;
+}
+
+fieldset:hover #rating {
+    opacity: 1;
+}
+
+#rating {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding: 5px;
+    height: 25px;
+    outline: none;
+    width: 100%;
+    -webkit-appearance: none;
+    background-color: rgba(20, 20, 20, 0.9);
+    opacity: 0.7;
+    transition: 1s;
+    border: rgba(88, 88, 88, 0.9) solid 1px;
+    border-radius: 5px;
+}
+
+#rating::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    background-color: rgba(20, 20, 20, 0.9);
+    transition: 1s;
+}
+
+fieldset:hover #rating::-moz-range-thumb {
+    background-color: rgba(46, 139, 87, 0.8);
+    transition: 1s;
+}
+
+input[type=radio] {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding: 5px;
+}
+
+input[list] {
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding: 5px;
+    resize: vertical;
+    background-color: rgba(20, 20, 20, 0.9);
+    border: solid 1px rgba(88, 88, 88, 0.9);
+    border-radius: 5px;
+    color: rgba(88, 88, 88, 0.9);
+    opacity: 0.7;
+    transition: 1s;
+}
+
+textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding: 5px;
+    resize: vertical;
+    background-color: rgba(20, 20, 20, 0.9);
+    border: solid 1px rgba(88, 88, 88, 0.9);
+    border-radius: 5px;
+    color: rgba(88, 88, 88, 0.9);
+    opacity: 0.7;
+    transition: 1s;
+}
+
+fieldset:hover textarea {
+    opacity: 1;
+}
+
+select {
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding: 5px;
+    resize: vertical;
+    background-color: rgba(20, 20, 20, 0.9);
+    border: solid 1px rgba(88, 88, 88, 0.9);
+    border-radius: 5px;
+    color: rgba(88, 88, 88, 0.9);
+    opacity: 0.7;
+    transition: 1s;
+}
+
+fieldset:hover select {
+    opacity: 1;
+}
+
+button {
+    width: 20%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    resize: vertical;
+    background-color: rgba(20, 20, 20, 0.9);
+    border: solid 1px rgba(88, 88, 88, 0.9);
+    border-radius: 5px;
+    color: rgba(88, 88, 88, 0.9);
+    opacity: 0.7;
+    transition: 1s;
+    cursor: pointer;
+}
+
+fieldset:hover button {
+    background-color: rgba(46, 139, 87, 0.8);
+    color: rgb(20, 20, 20);
+    opacity: 1;
+}
+
+button:hover {
+    background-color: black;
+}
+
+footer {
+    background-color: rgb(20, 20, 20);
+    margin: 0;
+    color: rgb(60, 60, 60);
+    transition: 1s;
+    padding: 1em;
+    text-align: center;
+    font-family: "Fjalla One";
+}
+
+footer p {
+    margin: 0;
+}
+
+footer:hover {
+    color: seagreen;
+}
